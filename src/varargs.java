@@ -1,4 +1,4 @@
-    public class VarargsDemo{
+    public class varargs{
     public static void printMax( double...numbers){
            if (numbers.length==0){
                System.out.println("pas d'arguments");
@@ -12,3 +12,4 @@
    public static void main (String args[]){
        printMax(34,3,2,56.5);
        printMax(new double[]{1,2,3});}}
+

@@ -1,7 +1,7 @@
-import java.io.*;
+import java.io.IOException;
 class SommeDargent {
     public static void main (String[] args) throws IOException{
-int capital = StdInput.readInInt(),
+int capital = 10000000,
 reste, b500,b200,b100,b50,b10;
 assert capital>0 && capital%10 ==0;
 b500 = capital/500;
