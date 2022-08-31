@@ -1,7 +1,7 @@
 import java.io.*;
 class SommeDargent {
-    public static void main (String[] args){
-int capital = Std.Input.readInInt(),
+    public static void main (String[] args) throws IOException{
+int capital = StdInput.readInInt(),
 reste, b500,b200,b100,b50,b10;
 assert capital>0 && capital%10 ==0;
 b500 = capital/500;
@@ -18,5 +18,5 @@ reste%=50;
 assert capital == b500*500+b200*200+b100*100+b50*50+reste;
 b10=reste/10;
 assert capital == b500*500+b200*200+b100*100+b50*50+b10*10;
-system.out.println(b500+""+b200+""+b100+""+b50+""+b10);}}
+System.out.println(b500+""+b200+""+b100+""+b50+""+b10);}}
 
