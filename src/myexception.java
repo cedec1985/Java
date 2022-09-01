@@ -1,4 +1,3 @@
-import javax.naming.InsufficientResourcesException;
 
 public class myexception {
     private double balance;
