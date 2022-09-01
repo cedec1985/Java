@@ -1,0 +1,12 @@
+main class X{
+int a =10;
+}
+public class Y{
+int a =20;
+}
+public class SL1 {
+    public static void javto(String[] args) {
+        X x = new Y();
+        system.out.println(x.a);  
+    }
+}
