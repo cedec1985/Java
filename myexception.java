@@ -25,7 +25,8 @@ public class myexception {
     public int getNumber(){
         return number;
     }
-public class bank{
+
+    
     public static void main(String []args){
         myexception c = new myexception(101);
         System.out.println("depositing $500.....");
@@ -40,4 +41,4 @@ public class bank{
             e.printStackTrace();
         }
     }   
-}}
+}
