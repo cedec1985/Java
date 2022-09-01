@@ -5,7 +5,7 @@ public class lirerep {
         File file = null;
         String[] paths;
         try{
-            file = new File("/src");
+            file = new File("C:/Users/Cédric/OneDrive/Documents/javap1/");
             paths = file.list();
             for (String path:paths){
                 System.out.println(path);
