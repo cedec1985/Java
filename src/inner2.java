@@ -7,7 +7,7 @@ public class inner2 {
         }
     }
 }
-public class maclasse2{
+class maclasse2{
     public static void main(String args[]){
         inner2 demo = new inner2();
         inner2.innerdemo inner = demo .new innerdemo();
