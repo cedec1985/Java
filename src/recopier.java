@@ -29,7 +29,7 @@ class fichier {
      catch (EOFException e){
          f.close();
      }
-     return nbelmnt ==0 ? 0:moyenne/(double) nbelmnt;}}
+     return nbelmnt ==0 ? 0:moyenne/(double) nbelmnt;}
 
 public void fusionner (String f1, String f2)
 throws IOException, EOFException{
@@ -52,7 +52,7 @@ throws IOException, EOFException{
             catch(EOFException e) {
                 h.writeInt(x);
                 recopier(f,h);
-                return;
+                return;  
             }
             while(true)
             if (x<=y){
@@ -66,7 +66,7 @@ throws IOException, EOFException{
                     }
                 }
                 else{
-                    h.writeInt(y);
+                    h.writeInt(y);}
                 try{
                     y=g.readInt();
                 }
@@ -75,12 +75,19 @@ throws IOException, EOFException{
                     recopier(f,h);
                     return;
                 }
-private void recopier (DataInputStream i, DataOutputStream o){
+                finally{
+                    f.close();
+                    g.close();}
+                }
+
+private void recopier (DataInputStream i, DataOutputStream o)
+throws EOFException{
                 try{
                     while(true) o.writeInt(i.readInt());
                 }
-                catch (EOFException e) { i.close();
-                    o.close();}}}
-               
-    
+                catch (EOFException e) { 
+                    i.close();
+                    o.close();
+                }}
+
 
