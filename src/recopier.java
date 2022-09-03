@@ -30,72 +30,64 @@ class fichier {
         f.close();
      }
      return nbelmnt ==0 ? 0:moyenne/(double) nbelmnt;}
-
-/**
- * @param f1
- * @param f2
- * @throws IOException
- * @throws EOFException
- */
-public void fusionner (String f1, String f2)
-throws IOException, EOFException{
-        DataInputStream f = new DataInputStream(new FileInputStream(f1));
-        DataInputStream g = new DataInputStream(new FileInputStream(f2));
-        DataOutputStream h = new DataOutputStream(new FileOutputStream(nomFichier));
-
-        int x;
-        int y;
-        try{
-            x=f.readInt();
-        }
-        catch (EOFException e ){
-            recopier(g,h);
-            f.close();
-            return;
-        }
-        try{
-            y=g.readInt();
-        }
-            catch(EOFException e) {
-                h.writeInt(x);
-                recopier(f,h);
-                g.close();
-                return;  
-            }
-            while(true)
-            if (x<=y){
-                h.writeInt(x);
-                try{
-                    x=f.readInt();}
-                    catch(EOFException e){
-                        h.writeInt(y);
-                        recopier(g,h);
-                        f.close();
-                        return;
-
-                    }
-                }
-                else{
-                    h.writeInt(y);}
-                try{
-                    y=g.readInt();
-                }
-                catch(EOFException e){
-                    h.writeInt(x);
-                    recopier(f,h);
-                }finally{
-                    f.close();
-                    g.close();
-                    return;}
-                
-private void recopier (DataInputStream i, DataOutputStream o)
-throws EOFException, IOException{
+    
+    void recopier (DataInputStream i, DataOutputStream o)
+    throws EOFException, IOException{
                 try{
                     while(true) o.writeInt(i.readInt());
                 }
                 catch (EOFException e) { 
                     i.close();
                     o.close();
-                }}}
+                }}
+                public void fusionner (String f1, String f2)
+                throws IOException, EOFException{
+                        DataInputStream f = new DataInputStream(new FileInputStream(f1));
+                        DataInputStream g = new DataInputStream(new FileInputStream(f2));
+                        DataOutputStream h = new DataOutputStream(new FileOutputStream(nomFichier));
+                
+                     int x, y;
+                        try{
+                            x=f.readInt();
+                        }
+                        catch (EOFException e ){
+                            recopier(g,h);
+                            f.close();
+                            return;
+                        }
+                        try{
+                            y=g.readInt();
+                        }
+                            catch(EOFException e) {
+                                h.writeInt(x);
+                                recopier(f,h);
+                                g.close();
+                                return;  
+                            }
+                            while(true)
+                            if (x<=y){
+                                h.writeInt(x);
+                                try{
+                                    x=f.readInt();}
+                                    catch(EOFException e){
+                                        h.writeInt(y);
+                                        recopier(g,h);
+                                        f.close();
+                                        return;
+                
+                                    }
+                                }
+                                else{
+                                    h.writeInt(y);
+                                try{
+                                    y=g.readInt();
+                                }
+                                catch(EOFException e){
+                                    h.writeInt(x);
+                                    recopier(f,h);
+                                    g.close();
+                                    return;
+                                } 
+                            }}}
 
 
