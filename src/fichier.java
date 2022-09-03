@@ -38,11 +38,12 @@ try{
     while(true) o.writeInt(i.readInt());
 }
 catch (EOFException e) {
-    i.close();o.close();
+    i.close();
+    o.close();
 }
 
-public void fusionner (String f1, String f2)
-throws IOException, EOFException{
+public void fusionner (String f1, String f2){
+throw  IOException, EOFException{
     DataInputStream f = new DataInputStream(new FileInputStream(f1));
     DataInputStream g = new DataInputStream(new FileInputStream(f2));
     DataOutputStream h = new DataOutputStream(new FileOutputStream(nomFichier));
@@ -56,7 +57,8 @@ throws IOException, EOFException{
         return;
     }
     try{
-        y=g.readInt();}
+        y=g.readInt();
+    }
         catch(EOFException e) {
             h.writeInt(x);
             recopier(f,h);
@@ -82,7 +84,7 @@ throws IOException, EOFException{
                 h.writeInt(x);
                 recopier(f,h);
                 return;
-            }}}}
+            }}}}}
 
 
 
