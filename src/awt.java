@@ -10,7 +10,8 @@ public class awt extends Frame {
         setVisible(true);
        
     }
-    public void paint(Graphics g){
+    public static void main(String []args){}
+        public void paint(Graphics g){
         g.drawString("Bonjour à tous", 110, 110);
     }
 }
