@@ -6,6 +6,7 @@ import java.awt.event.*;
             if(e.getKeyChar()=='q')
             System.exit(0);
         }
-    }
+    
+    public static void main(String [] args){}}
     
 
