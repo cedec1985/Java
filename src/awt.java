@@ -1,4 +1,3 @@
-package package1;
 import java.awt.Frame;
 import java.awt.Graphics;
 
@@ -15,6 +14,4 @@ public class awt extends Frame {
         g.drawString("Bonjour à tous", 110, 110);
     }
 }
-
-
 

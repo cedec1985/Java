@@ -1,4 +1,3 @@
-package package1;
 import java.awt.event.*;
 
     public class awt2 extends KeyAdapter{
