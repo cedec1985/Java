@@ -1,4 +1,3 @@
-import java.awt.event.*;
 public class awtnd 
 
     extends KeyAdapter{

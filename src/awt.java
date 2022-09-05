@@ -13,7 +13,7 @@ import java.applet.*;
         setSize(LARGEUR,HAUTEUR);
         setVisible(true);
     }
-    public static void main(String []args){}
+  
         public void paint(Graphics g){
         g.drawString("Bonjour à tous", 110, 110);
     }
@@ -23,7 +23,7 @@ import java.applet.*;
             public void KeyPressed(KeyEvent e){
                 if(e.getKeyChar()=='q')
                 System.exit(0);}}
-
+  public static void main(String []args){}
  
  @Override
         public void ancestorAdded(AncestorEvent event) {
