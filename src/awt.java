@@ -11,7 +11,7 @@ public class awt extends Frame{
         setVisible(true);
        
     }}
-    abstract class awt2 extends KeyAdapter{
+abstract class awt2 extends KeyAdapter{
 
         public void KeyPressed(KeyEvent e){
             if(e.getKeyChar()=='q')
