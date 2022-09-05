@@ -1,6 +1,6 @@
 package package1;
-import java.awt.*;
-
+import java.awt.Frame;
+import java.awt.Graphics;
 
 public class awt extends Frame {
     static final int LARGEUR=300;
