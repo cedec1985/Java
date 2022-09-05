@@ -1,4 +1,4 @@
-package package1;
+
 
 class Vehicle {
     public int maxSpeed[] ={200,300};

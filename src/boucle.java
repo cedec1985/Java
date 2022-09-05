@@ -1,4 +1,4 @@
-package package1;
+
 public class boucle {
     public static void main(String args[]){
         int [] bouc = {10,20,30,40,50,60};

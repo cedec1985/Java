@@ -1,4 +1,4 @@
-package package1;
+
 public class inner2 {
     private int num =175;
     public class innerdemo{

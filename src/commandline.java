@@ -1,4 +1,4 @@
-package package1;
+
 public class commandline {
     public static void main(String args[]){
         int i =0;

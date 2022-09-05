@@ -1,4 +1,4 @@
-package package1;
+
 class innerclass {
     int num;
 private class innerdemo{

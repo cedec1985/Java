@@ -1,4 +1,4 @@
-package package1;
+
 public class myexception {
     private double balance;
     private int number;

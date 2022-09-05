@@ -1,4 +1,4 @@
-package package1;
+
 public class example{
     int num =10;
     example(){}

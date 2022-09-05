@@ -1,4 +1,4 @@
-package package1;
+
     public class varargs{
     public static void printMax( double...numbers){
            if (numbers.length==0){

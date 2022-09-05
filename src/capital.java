@@ -1,4 +1,4 @@
-package package1;
+
 import java.io.IOException;
 class SommeDargent {
     public static void main (String[] args) throws IOException{
