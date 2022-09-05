@@ -8,23 +8,34 @@ import java.applet.*;
 
     static final int LARGEUR=300;
     static final int HAUTEUR=200;
+    public static void main(String []args){}
     public awt(){
         System.out.println("Bonjour");
         setSize(LARGEUR,HAUTEUR);
-        setVisible(true);
-    }
-  
+        setVisible(true);}
+
         public void paint(Graphics g){
         g.drawString("Bonjour à tous", 110, 110);
     }
-        
-    public class awtnd extends KeyAdapter{
+    }
+
+        public class awtnd extends KeyAdapter{
     
             public void KeyPressed(KeyEvent e){
                 if(e.getKeyChar()=='q')
-                System.exit(0);}}
-  public static void main(String []args){}
- 
+                System.exit(0);}
+  
+
+
+
+
+
+
+
+
+
+
+  
  @Override
         public void ancestorAdded(AncestorEvent event) {
           
