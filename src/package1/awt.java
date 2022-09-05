@@ -1,7 +1,5 @@
 package package1;
 import java.awt.*;
-import java.awt.event.KeyListener;
-import javafx.scene.input.KeyEvent;
 
 
 public class awt extends Frame {
@@ -11,7 +9,6 @@ public class awt extends Frame {
         super("Bonjour");
         setSize(LARGEUR,HAUTEUR);
         setVisible(true);
-        addKeyListener(new awt2());
        
     }
     public void paint(Graphics g){
