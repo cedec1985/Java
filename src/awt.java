@@ -1,7 +1,6 @@
 import java.awt.Graphics;
 import javax.swing.event.AncestorEvent;
 import javax.swing.event.AncestorListener;
-import javafx.scene.input.KeyEvent;
 import java.applet.*;
 
 
