@@ -1,5 +1,7 @@
 import java.awt.Graphics;
-
+import javax.swing.event.AncestorEvent;
+import javax.swing.event.AncestorListener;
+import java.applet.*;
     
 public class awt{
     static final int LARGEUR=300;
@@ -26,5 +28,27 @@ public static void main(String []args){}
             if(e.getKeyChar()=='q')
             System.exit(0);
         }
+
+        public class awdnd {
+            public class Appletawt extends Applet implements AncestorListener {
+                @Override
+                public void ancestorAdded(AncestorEvent event) {
+                    
+                    
+                }
+        
+                @Override
+                public void ancestorRemoved(AncestorEvent event) {
+                    
+                    
+                }
+        
+                @Override
+                public void ancestorMoved(AncestorEvent event) {
+                    
+                }}}
+    
     }
+
+
 
