@@ -1,16 +1,17 @@
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
-class euroconvertisseur implements ActionListener {
+
+    class euroconvertisseur implements ActionListener {
     TextField monnaie = new TextField("");
     Button euros = new Button("euros");
     Button exit = new Button("exit");
     Button francs = new Button("francs");
 
-    public euroconvertisseur() {
-    }
+        public euroconvertisseur() {}
 
-    public void init() {
+        public void init() {
         monnaie.setBackground(null);
         Panel p = new Panel();
         p.setLayout(new GridLayout(1, 2));
@@ -21,25 +22,18 @@ class euroconvertisseur implements ActionListener {
         add(p);
         pack();
         setVisible(true);
+        }
+        private void setVisible(boolean b) {
+     }
 
-    }
+        private void add(Panel p) {
+     }
 
-    private void setVisible(boolean b) {
-    }
-
-    private void add(Panel p) {
-    }
-
-    @Override
-    public void actionPerformed(java.awt.event.ActionEvent e) {
+        private void pack() {
         throw new UnsupportedOperationException();
-    }
+        }
 
-    private void pack() {
-        throw new UnsupportedOperationException();
-    }
-
-    public void actionPerformed(ActionEvent e) {
+        public void actionPerformed(ActionEvent e) {
         if (e.getSource() == exit)
             System.out.println("un message");
 
@@ -57,22 +51,20 @@ class euroconvertisseur implements ActionListener {
 
         exit.addActionListener(this);
         euros.addActionListener(this);
-        francs.addActionListener(this);
+        francs.addActionListener(this); }
 
-    }
-}
 
-class conversion {
-    private conversion() {
-    }
+        class conversion {
+        private conversion() {
+        }
 
-    static final double TAUX_DE_CONVERSION = 6.55957;
+        static final double TAUX_DE_CONVERSION = 6.55957;
 
-    public static double convertirEnEuros(double francs) {
+        public static double convertirEnEuros(double francs) {
         return francs / TAUX_DE_CONVERSION;
     }
 
-    public static double convertirEnFrancs(double euros) {
+        public static double convertirEnFrancs(double euros) {
         return euros * TAUX_DE_CONVERSION;
-    }
-}
+    }}}
+
