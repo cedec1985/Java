@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Appleteuroconvertisseur",
+            "request": "launch",
+            "mainClass": "Appleteuroconvertisseur",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Launch euroconvertisseur",
             "request": "launch",
             "mainClass": "euroconvertisseur",

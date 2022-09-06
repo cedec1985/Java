@@ -1,15 +1,14 @@
 import java.awt.*;
 import java.awt.event.ActionListener;
 
-public class euroconvertisseur implements ActionListener {
+public static void main(String[] args) {}
+class euroconvertisseur implements ActionListener {
     TextField monnaie = new TextField("");
     Button euros = new Button("euros");
     Button exit = new Button("exit");
     Button francs = new Button("francs");
 
-    public static void main(String[] args) {
-    }
-
+  
     public euroconvertisseur() {
     }
 
@@ -77,8 +76,5 @@ class conversion {
 
     public static double convertirEnFrancs(double euros) {
         return euros * TAUX_DE_CONVERSION;
-    }
-
-    public static void main(String[] args) {
     }
 }
