@@ -35,9 +35,7 @@ import java.applet.*;
             
             
         }
-        public class awtnd 
-
-    extends KeyAdapter{
+        public class awtnd extends KeyAdapter{
 
         public void KeyPressed(KeyEvent e){
             if(e.getKeyChar()=='q')
