@@ -28,3 +28,13 @@ pyplot.gca().get_xaxis().set_ticks([i for i in range(len(val)) if i % 10 == 0])
 x = range(10); y1 = range(10)
 y2 = [x ** 2 for x in range(10)]
 pyplot.fill_between(x, y1, y2, color = 'yellow')
+
+
+pyplot.plot([1, 2, 4, 6, 7, 8, 10, 15])
+pyplot.axhline(y = 3, xmin = 0, xmax  = 1, color = 'red', alpha = 0.5, linestyle = ':', linewidth = 2)
+pyplot.axvline(x = 4, ymin = 0, ymax  = 0.8, color = 'green', alpha = 0.5, linestyle = '--', linewidth = 4)
+
+
+mat = [[0.5, 0.5, 1], [0, 1, 1], [0, 1, 1]]; pyplot.matshow(mat); pyplot.gray(); pyplot.show()
+
+
