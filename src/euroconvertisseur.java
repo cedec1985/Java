@@ -28,10 +28,10 @@ public class euroconvertisseur extends Applet implements ActionListener {
 
     }
 
-    private void add(Panel p) {
+    private void setVisible(boolean b) {
     }
 
-    private void setVisible(boolean b) {
+    private void add(Panel p) {
     }
 
     @Override
