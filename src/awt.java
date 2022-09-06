@@ -13,24 +13,21 @@ public class awt{
         setSize(LARGEUR,HAUTEUR);
         setVisible(true);
     }
-
 private void setVisible(boolean b) {
     }
-    
 private void setSize(int largeur2, int hauteur2) {
-    }
-
-public static void main(String []args){}
-    public void paint(Graphics g){
+    }  
+public void paint(Graphics g){
         g.drawString("Bonjour à tous", 110, 110);}
+public static void main(String []args){
+ 
 
         public void KeyPressed(KeyEvent e){
             if(e.getKeyChar()=='q')
             System.exit(0);
         }
 
-        public class awdnd {
-            public class Appletawt extends Applet implements AncestorListener {
+        class awt extends Applet implements AncestorListener {
                 @Override
                 public void ancestorAdded(AncestorEvent event) {
                     
@@ -48,7 +45,6 @@ public static void main(String []args){}
                     
                 }}}
     
-    }
 
 
 
