@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.awt.event.ActionListener;
 
-public class euroconvertisseur extends Applet implements ActionListener {
+public class euroconvertisseur implements ActionListener {
     TextField monnaie = new TextField("");
     Button euros = new Button("euros");
     Button exit = new Button("exit");
@@ -11,7 +11,6 @@ public class euroconvertisseur extends Applet implements ActionListener {
     }
 
     public euroconvertisseur() {
-        super("euroconvertisseur");
     }
 
     public void init() {
@@ -81,5 +80,5 @@ class conversion {
     }
 
     public static void main(String[] args) {
-        /* TODO document why this method is empty */ }
+    }
 }
