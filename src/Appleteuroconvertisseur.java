@@ -15,6 +15,7 @@ public class Appleteuroconvertisseur extends Applet implements ActionListener {
         super();
     }
 
+    @Override
     public void init() {
         setLayout(new GridLayout(2, 1));
         monnaie.setBackground(null);
@@ -41,7 +42,7 @@ public class Appleteuroconvertisseur extends Applet implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == exit)
-            System.out.println(0);
+            System.out.println("un message");
 
         double valeur = 0;
         try {
