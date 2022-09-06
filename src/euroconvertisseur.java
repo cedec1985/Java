@@ -1,15 +1,13 @@
+import java.applet.Applet;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import javafx.event.ActionEvent;
 
-
-    public class euroconvertisseur extends Frame{
+    public class euroconvertisseur extends Applet implements ActionListener{
     TextField monnaie =new TextField("");
     Button euros = new Button("euros"),
             exit = new Button("exit");
     Button francs = new Button("francs");
-
-
 
 private void setLayout(GridLayout gridLayout) {
 }
@@ -17,26 +15,21 @@ private void setLayout(GridLayout gridLayout) {
 private void add(Panel p) {
 }        
 public euroconvertisseur(){
-    super();
+    super();}
+public void init(){
     setLayout(new GridLayout(2,1));
     monnaie.setBackground(null);
-   
+    add(monnaie);
     Panel p = new Panel();
-    p.setLayout(new FlowLayout() );
-    p.add(exit);
-    p.add(euros);
-    p.add(francs); 
-    p.add(monnaie);
+    p.setLayout(new GridLayout(1,2));
+    p.add(euros);euros.addActionListener(this);
+    p.add(francs);francs.addActionListener(this);
     add(p);
     pack();
     setVisible(true);
-    
 }
 
 private void pack() {
-}
-
-private void setVisible(boolean b) {
 }
 
 public void actionPerformed(ActionEvent e){
@@ -58,4 +51,10 @@ euros.addActionListener((ActionListener) this);
 francs.addActionListener((ActionListener) this);
 }
 public static void main(String[] args) {
-}}
+}
+
+@Override
+public void actionPerformed(java.awt.event.ActionEvent e) {
+    
+}
+}
