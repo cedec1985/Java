@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.awt.event.ActionListener;
 
-public class Appleteuroconvertisseur extends Applet implements ActionListener {
+public class euroconvertisseur extends Applet implements ActionListener {
     TextField monnaie = new TextField("");
     Button euros = new Button("euros");
     Button exit = new Button("exit");
@@ -10,12 +10,11 @@ public class Appleteuroconvertisseur extends Applet implements ActionListener {
     public static void main(String[] args) {
     }
 
-    public Appleteuroconvertisseur() {
-        super();
+    public euroconvertisseur() {
+        super("euroconvertisseur");
     }
 
     public void init() {
-        setLayout(new GridLayout(2, 1));
         monnaie.setBackground(null);
         Panel p = new Panel();
         p.setLayout(new GridLayout(1, 2));
@@ -26,12 +25,10 @@ public class Appleteuroconvertisseur extends Applet implements ActionListener {
         add(p);
         pack();
         setVisible(true);
+
     }
 
     private void add(Panel p) {
-    }
-
-    private void setLayout(GridLayout gridLayout) {
     }
 
     private void setVisible(boolean b) {
@@ -65,23 +62,24 @@ public class Appleteuroconvertisseur extends Applet implements ActionListener {
         exit.addActionListener(this);
         euros.addActionListener(this);
         francs.addActionListener(this);
+
+    }
+}
+
+class conversion {
+    private conversion() {
     }
 
-    class conversion {
-        private conversion() {
-        }
+    static final double TAUX_DE_CONVERSION = 6.55957;
 
-        static final double TAUX_DE_CONVERSION = 6.55957;
-
-        public static double convertirEnEuros(double francs) {
-            return francs / TAUX_DE_CONVERSION;
-        }
-
-        public static double convertirEnFrancs(double euros) {
-            return euros * TAUX_DE_CONVERSION;
-        }
-
-        public static void main(String[] args) {
-            /* TODO document why this method is empty */ }
+    public static double convertirEnEuros(double francs) {
+        return francs / TAUX_DE_CONVERSION;
     }
+
+    public static double convertirEnFrancs(double euros) {
+        return euros * TAUX_DE_CONVERSION;
+    }
+
+    public static void main(String[] args) {
+        /* TODO document why this method is empty */ }
 }
