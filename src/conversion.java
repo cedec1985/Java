@@ -9,3 +9,4 @@ public class conversion {
     return euros*taux_de_conversion;
     }
 }
+

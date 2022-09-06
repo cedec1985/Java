@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 import javafx.event.ActionEvent;
 
+
 public class Appleteuroconvertisseur extends Applet implements ActionListener {
     TextField monnaie = new TextField("");
     Button euros = new Button("euros"),
@@ -36,9 +37,6 @@ public class Appleteuroconvertisseur extends Applet implements ActionListener {
     }
 
     private void pack() {
-    }
-
-    public static void main(String[] args) {
     }
 
     public void actionPerformed(ActionEvent e) {
