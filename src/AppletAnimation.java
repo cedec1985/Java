@@ -31,7 +31,7 @@ public class AppletAnimation extends Applet implements Runnable {
          if (index >= tabImage.length)
             index = 0;
          try {
-            thread.sleep(500);
+            Thread.sleep(500);
       } catch (InterruptedException e) {
             e.printStackTrace();
          }
@@ -49,7 +49,6 @@ public class AppletAnimation extends Applet implements Runnable {
    public void stop() {
       // arrêt du thread
       if (thread != null) {
-         thread.stop();
          thread = null;
       }
    }
