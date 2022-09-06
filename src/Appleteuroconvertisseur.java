@@ -6,15 +6,10 @@ import javafx.event.ActionEvent;
 
 public class Appleteuroconvertisseur extends Applet implements ActionListener {
     TextField monnaie = new TextField("");
-    Button euros = new Button("euros"),
-            exit = new Button("exit");
+    Button euros = new Button("euros");
+    Button  exit = new Button("exit");
     Button francs = new Button("francs");
 
-    private void setLayout(GridLayout gridLayout) {
-    }
-
-    private void add(Panel p) {
-    }
 
     public Appleteuroconvertisseur() {
         super();
@@ -35,13 +30,19 @@ public class Appleteuroconvertisseur extends Applet implements ActionListener {
         setVisible(true);
        
     }
+    @Override
+    public void actionPerformed(java.awt.event.ActionEvent e) {
+    throw new UnsupportedOperationException();}
+    
 
     private void pack() {
+        throw new UnsupportedOperationException(); 
     }
 
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == exit)
             System.out.println(0);
+
         double valeur = 0;
         try {
             valeur = (Double.parseDouble(monnaie.getText()));
@@ -54,12 +55,20 @@ public class Appleteuroconvertisseur extends Applet implements ActionListener {
         else
             monnaie.setText(Double.toString(conversion.convertirEnFrancs(valeur)));
 
-        exit.addActionListener((ActionListener) this);
-        euros.addActionListener((ActionListener) this);
-        francs.addActionListener((ActionListener) this);
-    }
-
-    @Override
-    public void actionPerformed(java.awt.event.ActionEvent e) {
-    }
-}
+        exit.addActionListener(this);
+        euros.addActionListener(this);
+        francs.addActionListener(this);
+    }}
+    class conversion {
+        private conversion(){}
+       
+        static final double TAUX_DE_CONVERSION = 6.55957;
+    
+        public static double convertirEnEuros (double francs){
+        return francs/TAUX_DE_CONVERSION;
+        }
+        public static double convertirEnFrancs (double euros){
+        return euros*TAUX_DE_CONVERSION;
+        }
+     }
+    
