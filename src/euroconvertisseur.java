@@ -2,11 +2,14 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 import javafx.event.ActionEvent;
 
-public class euroconvertisseur extends Frame{
+
+    public class euroconvertisseur extends Frame{
     TextField monnaie =new TextField("");
     Button euros = new Button("euros"),
             exit = new Button("exit");
     Button francs = new Button("francs");
+
+
 
 private void setLayout(GridLayout gridLayout) {
 }
@@ -35,6 +38,7 @@ private void pack() {
 
 private void setVisible(boolean b) {
 }
+
 public void actionPerformed(ActionEvent e){
     if(e.getSource()==exit) System.out.println(0);
     double valeur=0;
@@ -48,9 +52,10 @@ public void actionPerformed(ActionEvent e){
         monnaie.setText(Double.toString(conversion.convertirEnEuros(valeur)));
         else
         monnaie.setText(Double.toString(conversion.convertirEnFrancs(valeur)));
-
     
 exit.addActionListener((ActionListener) this);
 euros.addActionListener((ActionListener) this);
 francs.addActionListener((ActionListener) this);
+}
+public static void main(String[] args) {
 }}
