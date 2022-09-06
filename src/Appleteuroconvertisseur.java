@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 import javafx.event.ActionEvent;
 
-    public class euroconvertisseur extends Applet implements ActionListener{
+    public class Appleteuroconvertisseur extends Applet implements ActionListener{
     TextField monnaie =new TextField("");
     Button euros = new Button("euros"),
             exit = new Button("exit");
@@ -14,7 +14,7 @@ private void setLayout(GridLayout gridLayout) {
 
 private void add(Panel p) {
 }        
-public euroconvertisseur(){
+public Appleteuroconvertisseur(){
     super();}
 public void init(){
     setLayout(new GridLayout(2,1));
