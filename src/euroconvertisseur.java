@@ -1,14 +1,12 @@
 import java.awt.*;
 import java.awt.event.ActionListener;
 
-public static void main(String[] args) {}
 class euroconvertisseur implements ActionListener {
     TextField monnaie = new TextField("");
     Button euros = new Button("euros");
     Button exit = new Button("exit");
     Button francs = new Button("francs");
 
-  
     public euroconvertisseur() {
     }
 
