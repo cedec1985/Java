@@ -72,5 +72,5 @@ public class Appleteuroconvertisseur extends Applet implements ActionListener {
         public static double convertirEnFrancs (double euros){
         return euros*TAUX_DE_CONVERSION;
         }
-public static void main(String[] args){}}
+public static void main(String[] args){ /* TODO document why this method is empty */ }}
     
