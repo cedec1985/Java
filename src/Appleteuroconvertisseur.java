@@ -32,6 +32,7 @@ public class Appleteuroconvertisseur extends Applet implements ActionListener {
         add(p);
         pack();
         setVisible(true);
+       
     }
 
     private void pack() {
