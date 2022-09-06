@@ -7,7 +7,7 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch App",
+           "name": "Launch App",
             "request": "launch",
             "mainClass": "hellofx.Main",
             "vmArgs": "--module-path C:/Users/Cédric/OneDrive/Documents/javap1/src/hellofx/src/hellofx/lib --add-modules javafx.controls,javafx.fxml",
