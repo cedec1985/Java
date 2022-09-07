@@ -9,7 +9,7 @@
             "type": "java",
            "name": "Launch App",
             "request": "launch",
-            "mainClass": "hellofx.Main",
+            "mainClass": "C:\\Users\\Cédric\\OneDrive\\Documents\\javap1\\src\\hellofx\\src\\hellofx\\Main.java",
             "vmArgs": "--module-path C:\\javafx-sdk-18.0.2 --add-modules javafx.controls,javafx.fxml",
         }
     ]
