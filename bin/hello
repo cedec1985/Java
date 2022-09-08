@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app><head>
+<html lang="fr" ng-app><head>
 <title>Hello, Angular</title>
 <script src="https://code.angularjs.org/1.5.8/angular.min.js"></script>
 </head>
