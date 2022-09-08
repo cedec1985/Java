@@ -3,13 +3,13 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 
-    class euroconvertisseur implements ActionListener {
+    class Appleteuroconvertisseur implements ActionListener {
     TextField monnaie = new TextField("");
     Button euros = new Button("euros");
     Button exit = new Button("exit");
     Button francs = new Button("francs");
 
-        public euroconvertisseur() {}
+        public Appleteuroconvertisseur() {}
 
         public void init() {
         monnaie.setBackground(null);
