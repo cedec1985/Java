@@ -54,7 +54,7 @@ import java.awt.event.ActionEvent;
         francs.addActionListener(this); }
 
 
-        class conversion {
+        static class conversion {
         private conversion() {
         }
 
@@ -66,5 +66,11 @@ import java.awt.event.ActionEvent;
 
         public static double convertirEnFrancs(double euros) {
         return euros * TAUX_DE_CONVERSION;
-    }}}
+    }}
+    public static void main(String[] args){
+        launch(args);}
+    
+
+    private static void launch(String[] args) {
+    }}
 
