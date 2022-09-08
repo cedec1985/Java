@@ -29,7 +29,11 @@
             "name": "Launch euroconvertisseur",
             "request": "launch",
             "mainClass": "euroconvertisseur",
+<<<<<<< HEAD
             "projectName": "javap1",
+=======
+            "projectName": "javap1_c9cf07e3",
+>>>>>>> ca294e915daea26df1c00965fd1fd37c1f6963ac
             "vmArgs": "--module-path C:\\Program Files\\Java\\jdk1.8.0_202\\bin\\' --add-module javafxcontrols javafx.fxml javafx.graphics javafx.swing javafx.media javafx.swt javafx.base"
 
         },
