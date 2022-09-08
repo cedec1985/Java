@@ -4,6 +4,20 @@
             "type": "java",
             "name": "Launch Appleteuroconvertisseur",
             "request": "launch",
+            "mainClass": "hellofx.src.hellofx.Appleteuroconvertisseur",
+            "projectName": "javap1_c9cf07e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch appMain",
+            "request": "launch",
+            "mainClass": "hellofx.src.hellofx.appMain",
+            "projectName": "javap1_c9cf07e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch Appleteuroconvertisseur",
+            "request": "launch",
             "mainClass": "Appleteuroconvertisseur",
             "projectName": ""
         },
