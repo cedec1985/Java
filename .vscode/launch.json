@@ -30,7 +30,7 @@
             "request": "launch",
             "mainClass": "euroconvertisseur",
             "projectName": "javap1_c9cf07e3",
-            "vmArgs": "--module-path %PATH/TO/FX% --add-module javafxcontrols javafx.fxml javafx.graphics javafx.swing javafx.media javafx.swt javafx.base"
+            "vmArgs": "--module-path C:\\Program Files\\Java\\jdk1.8.0_202\\bin\\java.exe' --add-module javafxcontrols javafx.fxml javafx.graphics javafx.swing javafx.media javafx.swt javafx.base"
 
         },
         {
