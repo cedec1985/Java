@@ -1,9 +1,10 @@
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.applet.Applet;
 
 
-    class euroconvertisseur implements ActionListener {
+    class euroconvertisseur extends Applet implements ActionListener {
     TextField monnaie = new TextField("");
     Button euros = new Button("euros");
     Button exit = new Button("exit");
