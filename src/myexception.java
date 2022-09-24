@@ -27,7 +27,7 @@ public class myexception {
 
     
     public static void main(String []args){
-        myexception c = new myexception(101);
+        myexception c = new myexception(100);
         System.out.println("depositing $500.....");
         c.deposit(500.00);
         try{

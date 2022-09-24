@@ -11,7 +11,8 @@ public class lireconsole {
             char c;
             do{
                 c = (char)cin.read();
-                System.out.print(c);}while (c!='q');}
+                System.out.print(c);}
+                while (c!='q');}
                 finally{
                     if (cin!=null){
                         cin.close();

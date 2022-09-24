@@ -8,7 +8,7 @@ import java.io.OutputStream;
 public class inputandoutputstream {
     public static void main(String args []){
 try{
-    byte bWrite [] = {11,21,3,40,5};
+    byte bWrite [] = {14,21,3,40,5};
     OutputStream os = new FileOutputStream("test.txt");
     for (int x=0;x<bWrite.length;x++){
         os.write(bWrite[x]);

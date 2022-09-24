@@ -2,6 +2,104 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch varargs",
+            "request": "launch",
+            "mainClass": "varargs",
+            "projectName": "javap1_c9cf07e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch tableau",
+            "request": "launch",
+            "mainClass": "tableau",
+            "projectName": "javap1_c9cf07e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch myexception",
+            "request": "launch",
+            "mainClass": "myexception",
+            "projectName": "javap1_c9cf07e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch lirerep",
+            "request": "launch",
+            "mainClass": "lirerep",
+            "projectName": "javap1_c9cf07e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch lireconsole",
+            "request": "launch",
+            "mainClass": "lireconsole",
+            "projectName": "javap1_c9cf07e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch inputandoutputstream",
+            "request": "launch",
+            "mainClass": "inputandoutputstream",
+            "projectName": "javap1_c9cf07e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch maclasse",
+            "request": "launch",
+            "mainClass": "maclasse",
+            "projectName": "javap1_c9cf07e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch maclasse2",
+            "request": "launch",
+            "mainClass": "maclasse2",
+            "projectName": "javap1_c9cf07e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch copy",
+            "request": "launch",
+            "mainClass": "copy",
+            "projectName": "javap1_c9cf07e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch exception",
+            "request": "launch",
+            "mainClass": "exception",
+            "projectName": "javap1_c9cf07e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch example",
+            "request": "launch",
+            "mainClass": "example",
+            "projectName": "javap1_c9cf07e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch commandline",
+            "request": "launch",
+            "mainClass": "commandline",
+            "projectName": "javap1_c9cf07e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch SommeDargent",
+            "request": "launch",
+            "mainClass": "SommeDargent",
+            "projectName": "javap1_c9cf07e3"
+        },
+        {
+            "type": "java",
+            "name": "Launch euroconvertisseur",
+            "request": "launch",
+            "mainClass": "hellofx.src.hellofx.euroconvertisseur",
+            "projectName": "javap1_c9cf07e3"
+        },
+        {
+            "type": "java",
             "name": "Launch Appleteuroconvertisseur",
             "request": "launch",
             "mainClass": "hellofx.src.hellofx.Appleteuroconvertisseur",
@@ -22,7 +120,6 @@
             "mainClass": "Appleteuroconvertisseur",
             "projectName": "javap1_c9cf07e3",
             "vmArgs": "--module-path %PATH/TO/FX% --add-module javafxcontrols javafx.fxml javafx.graphics javafx.swing javafx.media javafx.swt javafx.base"
-            
         },
         {
             "type": "java",
@@ -31,7 +128,6 @@
             "mainClass": "euroconvertisseur",
             "projectName": "javap1_c9cf07e3",
             "vmArgs": "--module-path C:\\Program Files\\Java\\jdk1.8.0_202\\bin\\' --add-module javafxcontrols javafx.fxml javafx.graphics javafx.swing javafx.media javafx.swt javafx.base"
-
         },
         {
             "type": "java",
