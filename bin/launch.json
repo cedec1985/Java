@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch sapina",
+            "request": "launch",
+            "mainClass": "sapina",
+            "projectName": "javap1_c9cf07e3"
+        },
+        {
+            "type": "java",
             "name": "Launch varargs",
             "request": "launch",
             "mainClass": "varargs",

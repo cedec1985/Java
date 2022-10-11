@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset ="utf-8"> <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic web audio exemple</title>
+    <style>
+        input{
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+<audio src="Coldplay ft. Beyoncé - Hymn For The Weekend (Ash Remix).mp3"></audio>
+<button class="paused">Play</button>
+<br>
+<input type="range" min="0" max="1" step="0.01" value="1" class="volume">
+<script>
+const AudioContext = window.AudioContext || windows.webkitAudioContext;
+const audioCtx =new AudioContext();
+
+const oscillator = audioCtx.createOscillator();
+oscillator.type = 'square';
+oscillator.frequency.setValueAtTime(440, audioCtx.currentTime); // value in hertz
+
+
+<audio src="C:\Users\Cédric\OneDrive\Documents\javap1\src\paradise.html"></audio>
+// get the audio element
+const audioElement = document.querySelector('audio');
+
+// pass it into the audio context
+const track = audioCtx.createMediaElementSource(audioElement);
+<button data-playing="false" role="switch" aria-checked="false">
+  <span>Play/Pause</span>
+</button>
+
+track.connect(audioCtx.destination);
+const playButton = document.querySelector('button');
+
+playButton.addEventListener('click', () => {
+  // Check if context is in suspended state (autoplay policy)
+  if (audioCtx.state === 'suspended') {
+    audioCtx.resume();
+  }
+  if (playButton.dataset.playing === 'false') {
+    audioElement.play();
+    playButton.dataset.playing = 'true';
+  } else if (playButton.dataset.playing === 'true') {
+    audioElement.pause();
+    playButton.dataset.playing = 'false';
+  }
+}, false);
+
+audioElement.addEventListener('ended', () => {
+  playButton.dataset.playing = 'false';
+}, false);
+
+const gainNode = audioCtx.createGain();
+track.connect(gainNode).connect(audioCtx.destination);
+const volumeControl = document.querySelector('#volume');
+
+volumeControl.addEventListener('input', () => {
+  gainNode.gain.value = volumeControl.value;
+}, false);
+const pannerOptions = { pan: 0 };
+const panner = new StereoPannerNode(audioCtx, pannerOptions);
+<input type="range" id="panner" min="-1" max="1" value="0" step="0.01" />
+const pannerControl = document.querySelector('#panner');
+pannerControl.addEventListener('input', () => {
+  panner.pan.value = pannerControl.value;
+}, false);
+
+track.connect(gainNode).connect(panner).connect(audioCtx.destination);
+oscillator.connect(audioCtx.destination);
+oscillator.start();
+</script>
+</body>
+</html>
